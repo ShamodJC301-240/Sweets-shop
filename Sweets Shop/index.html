@@ -11,7 +11,7 @@
   <title>Butter & Bonbons - Fresh Baked Goods and confections!</title>
   <!-- Custom favicon: Added bread emoji as favicon for brand recognition -->
   <link rel="icon" href="data:image/svg+xml,<svg  xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍞</text></svg>" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="./css/style.css" />
 </head>
 <body>
 
@@ -76,11 +76,11 @@
     <!-- OPTIMIZE: Host images locally or use a CDN to reduce external dependencies -->
     <!-- TODO: Add width and height attributes to prevent layout shift -->
     <div class="carousel">
-      <img src="https://images.unsplash.com/photo-1691480162735-9b91238080f6?q=80&w=1160&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Croissant"><!-- Going to update links to make them more readable, but also make sure that they are working -->
-      <img src="https://vikalinka.com/wp-content/uploads/2021/03/Garlic-Butter-Dinner-Rolls-11-Edit.jpg" alt="Bread">
-      <img src="https://www.mamaknowsglutenfree.com/wp-content/uploads/2021/07/featured-gluten-free-chocolate-chip-cookies-recipe.jpg" alt="Cookies">
-      <img src="https://www.glutenfreepalate.com/wp-content/uploads/2020/06/Gluten-Free-Birthday-Cake-4.2-720x405.jpg" alt="Cake">
-      <img src="https://www.iheartnaptime.net/wp-content/uploads/2022/03/I-Heart-Naptime-Easter-Cake-Pops-9-500x500.jpg" alt="Cake Pops">
+      <img src="./assets/images/Croissant.jpg" alt="Croissant"><!-- Going to update links to make them more readable, but also make sure that they are working -->
+      <img src="./assets/images/GarlicButterRolls.jpg" alt="Bread">
+      <img src="./assets/images/GooeyChocolateChipCookies.jpg" alt="Cookies">
+      <img src="./assets/images/ChocolateCake.jpg" alt="Cake">
+      <img src="./assets/images/Cakepop.jpg" alt="Cake Pops">
     </div>
   </section>
 
@@ -161,6 +161,7 @@
       <h3>Share Your Experience</h3>
       <form class="review-form" onsubmit="submitReview(event)">
         <input type="text" placeholder="Your Name" required> <!-- Tweak this -->
+        <label for="rating">Choose a rating</label>
         <select id="rating" required>
           <option value="">Rate your experience</option>
           <option value="5">⭐⭐⭐⭐⭐ Excellent</option>
@@ -272,7 +273,8 @@
       <input type="tel" placeholder="Phone Number" required>
       <input type="date" placeholder="Event Date" required>
       <input type="number" placeholder="Number of Guests" required>
-      <select required>
+      <label for="event">Choose your event</label>
+      <select id="event" required>
         <option value="">Event Type</option>
         <option value="wedding">Wedding</option>
         <option value="birthday">Birthday Party</option>
@@ -292,7 +294,7 @@
   <!-- Toastyyyyy! notifications: Container for temporary success/error messages -->
   <div id="toastContainer"></div>
 
-  <script src="script.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 </html>
 

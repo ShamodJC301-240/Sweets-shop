@@ -1,17 +1,52 @@
 sweet-shop/
 │
-├── index.html              → Home & featured products
-├── products.html           → All bakery items
-├── cart.html               → Shopping cart
-├── contact.html            → Contact / About page
+├── index.html                     # Home: featured products, promotions, news
+├── products.html                  # All bakery items with filters/categories
+├── cart.html                      # Shopping cart & checkout (frontend demo)
+├── contact.html                   # Contact form, About page, bakery info
+├── recipes.html                   # Optional: Recipes & baking guides
+├── blog.html                      # Optional: Baking tips, tutorials, seasonal guides
 │
-├── css/
-│   └── style.css
-├── js/
-│   ├── main.js
-│   ├── cart.js
-│   └── products.js
-└── images/
-    ├── cakes/
-    ├── pastries/
-    └── breads/
+├── /css
+│   ├── main.css                    # Core styling
+│   ├── layout.css                  # Grid, flex, responsive design
+│   ├── components.css              # Cards, buttons, modals
+│   ├── colors.css                  # Warm, cozy theme (browns, pastels)
+│   └── animations.css              # Hover effects, product animations
+│
+├── /js
+│   ├── main.js                     # Navbar, menu toggles, general scripts
+│   ├── products.js                 # Product listing, filtering, sorting
+│   ├── cart.js                     # Add/remove items, local storage logic
+│   ├── recipes.js                  # Load recipe data (optional)
+│   └── utils.js                     # Helper functions
+│
+├── /data
+│   ├── products.json               # Product details, prices, categories
+│   ├── recipes.json                # Baking recipes, step-by-step instructions
+│   └── blog.json                   # Tips, tutorials, seasonal guides
+│
+├── /images/
+│   ├── cakes/
+│   ├── pastries/
+│   ├── breads/
+│   └── ui/                         # Icons, banners, buttons
+│
+├── /assets
+│   ├── icons/                       # SVG/PNG for UI and products
+│   ├── pdfs/                        # Printable recipes or guides
+│   └── fonts/                        # Cozy fonts for bakery feel
+│
+├── /components
+│   ├── navbar.html
+│   ├── footer.html
+│   ├── product-card.html            # Individual product display
+│   ├── recipe-card.html             # Recipe or guide preview card
+│   ├── blog-card.html               # Tip/tutorial preview
+│   └── cart-item.html               # Cart item template
+│
+└── /docs
+    ├── design.md                     # UI style, color palette, component design
+    ├── content-plan.md               # Products, recipes, blog content planning
+    ├── roadmap.md                    # Future features (search, filters, user accounts)
+    └── sources.md                    # References for recipes, tutorials, or inspiration
